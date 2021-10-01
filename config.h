@@ -2,14 +2,15 @@
 
 /* appearance */
 static const unsigned int borderpx        = 1;        /* border pixel of windows */
+static const unsigned int gappx           = 1;        /* gap pixel between windows */
 static const unsigned int snap            = 32;       /* snap pixel */
 static const int showbar                  = 0;        /* 0 means no bar */
 static const int topbar                   = 1;        /* 0 means bottom bar */
-static const char *fonts[]                = { "monospace:size=10" };
-static const char dmenufont[]             = "monospace:size=10";
+static const char *fonts[]                = { "CaskaydiaCove Nerd Font Mono:pixelsize=10:antialias=true:autohint=true", "monospace:size=8" };
+static const char dmenufont[]             = "CaskaydiaCove Nerd Font Mono:pixelsize=10:antialias=true:autohint=true";
 static const char col_matrix_green[]      = "#00FF41";
 static const char col_matrix_green_dark[] = "#008F11";
-static const char col_matrix_black[]      = "#0D0208";
+static const char col_matrix_black[]      = "#222222";
 static const char *colors[][3]            = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_matrix_green_dark, col_matrix_black, col_matrix_black},
@@ -28,7 +29,6 @@ static const Rule rules[] = {
 	 */
 	/* class         instance       title            tags mask     iscentered     isfloating   monitor */
 	{ "Gimp",        NULL,          NULL,            0,            0,             1,           -1 },
-	{ "Firefox",     NULL,          NULL,            1 << 8,       0,             0,           -1 },
 	{ "st-256color", "st-256color", "pulsemixer",    0,            1,             1,           -1 },
 	{ "st-256color", "st-256color", "bc",            0,            1,             1,           -1 },
 	{ "mpv",         "mpv",         "mpvfloat",      0,            1,             1,           -1 },
